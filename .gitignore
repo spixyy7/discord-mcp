@@ -1,0 +1,11 @@
+# Deny by default: only reviewed, portable source files may be committed.
+# This also excludes new local data and credentials created in the future.
+*
+!/.gitignore
+!/README.md
+!/.env.example
+!/run-discord-mcp.mjs
+
+# Never add exceptions for TOKEN.txt, real .env files, local MCP configs,
+# agent memories/settings, notes with Discord IDs, logs, backups, or binaries.
+# Review both content and privacy before adding another allowlisted file.
